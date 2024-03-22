@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -7,11 +7,20 @@ const Header = () => {
             
             <nav>
                 <span>My Website</span>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/posts">Posts</Link>
-                <Link to="/users">Users</Link>
-                <Link to="/contact">Contact Us</Link>
+                <NavLink to="/">Home</NavLink>
+                {/* <Link to="/">Home</Link> */}
+
+                <NavLink to="/users">Users</NavLink>
+                 {/* <Link to="/users">Users</Link> */}
+
+                 <NavLink to="/about">About</NavLink>
+                {/* <Link to="/about">About</Link> */}
+
+                <NavLink to="/posts">Posts</NavLink>
+                {/* <Link to="/posts">Posts</Link> */}
+
+                <NavLink to="/contact">Contact us</NavLink>
+                {/* <Link to="/contact">Contact Us</Link> */}
 
             </nav>
         </div>
